@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myapp.admin.example.com.onlinelawfirm">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard"></activity>
+        <activity android:name=".WebView" />
+        <activity android:name=".ViewPdf" />
+        <activity android:name=".uploadPdf">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chat" />
+        <activity
+            android:name=".NavLawyer"
+            android:label="abc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".dashboardClient" />
+        <activity android:name=".ViewComplains" />
+        <activity android:name=".dasboardLawyer" />
+        <activity android:name=".ViewLaw" />
+        <activity android:name=".Profile" />
+        <activity android:name=".ActivityPayment" />
+        <activity android:name=".RegisterLaw" />
+        <activity
+            android:name=".NavAdmin"
+            android:label="@string/title_activity_nav_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ViewLawyer" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

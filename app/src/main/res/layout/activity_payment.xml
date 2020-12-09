@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPayment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/curve"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/consimg"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="200dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:src="@drawable/logolaw"
+            app:layout_constraintLeft_toLeftOf="@id/consimg"
+            app:layout_constraintTop_toTopOf="@id/consimg"
+            app:layout_constraintRight_toRightOf="@id/consimg"
+            app:layout_constraintBottom_toBottomOf="@id/consimg"
+            android:layout_height="150dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="Payment Title:"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:id="@+id/txttitle"
+        android:textSize="18sp"
+        android:textColor="@color/brown"
+        app:layout_constraintTop_toBottomOf="@id/consimg"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edttitle"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/brown"
+        android:layout_marginLeft="20dp"
+        android:paddingHorizontal="10sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:drawableTint="@color/brown"
+        android:drawableRight="@drawable/ic_payment_black_24dp"
+
+        app:layout_constraintTop_toBottomOf="@id/txttitle"
+        android:layout_height="43dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:text="Payment Receipt"
+        android:textColor="@color/brown"
+        android:id="@+id/txtrec"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/edttitle"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/edtrec"
+        android:backgroundTint="@color/brown"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="10sp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Click to choose image from gallery"
+        android:layout_marginTop="10dp"
+        android:onClick="fromgallery"
+        android:textAlignment="textStart"
+        android:textColor="#192FEE"
+        android:drawableTint="@color/brown"
+        android:drawableRight="@drawable/ic_image_black_24dp"
+        app:layout_constraintTop_toBottomOf="@id/txtrec"
+        android:layout_height="43dp"/>
+
+
+    <ImageView
+        android:id="@+id/edtcam"
+
+        android:layout_width="100dp"
+        android:onClick="fromcamera"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtrec"
+        android:layout_height="100dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/view1"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@id/edtcam"
+        app:layout_constraintLeft_toLeftOf="@id/edtrec"
+        app:layout_constraintRight_toRightOf="@id/edtrec"
+        android:background="@color/brown"/>
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:layout_width="250dp"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/roundborder"
+        android:id="@+id/btnpay"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/edtrec"
+        app:layout_constraintRight_toRightOf="@id/edtrec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="40dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

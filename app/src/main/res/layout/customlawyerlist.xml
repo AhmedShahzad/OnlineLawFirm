@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:background= "#fff"
+    android:weightSum="3"
+    android:layout_height="250dp">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="100dp"
+    android:src="@drawable/logolaw"
+
+    android:id="@+id/img"
+    android:layout_gravity="center"
+    android:layout_height="80dp"/>
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:id="@+id/name"
+            android:backgroundTint="@color/brown"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+
+            android:layout_width="match_parent"
+            android:text="Email"
+            android:id="@+id/email"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:text="contact"
+            android:id="@+id/contact"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:text="Lawyer Type"
+            android:id="@+id/lawyer_type"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:text="Designation"
+            android:id="@+id/designation"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:text="Description"
+            android:id="@+id/description"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="100dp"
+            android:background="@color/brown"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:text="Pay Now"
+            android:id="@+id/paynow"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_gravity="left"/>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="100dp"
+            android:background="@color/brown"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:text="Chat"
+            android:id="@+id/chat"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_gravity="right"/>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="100dp"
+            android:background="@color/brown"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:text="Register Case"
+            android:id="@+id/user_case"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+

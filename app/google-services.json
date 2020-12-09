@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "116795928744",
+    "firebase_url": "https://tidal-fusion-291810.firebaseio.com",
+    "project_id": "tidal-fusion-291810",
+    "storage_bucket": "tidal-fusion-291810.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116795928744:android:cee9ce7ff750b77fa8d29d",
+        "android_client_info": {
+          "package_name": "myapp.admin.example.com.onlinelawfirm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116795928744-lp9v6bt0j0gc114m8koef1fkboig86oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD55RqZY6wsBxrhzUL5GQnYAKdDZgaQq88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116795928744-lp9v6bt0j0gc114m8koef1fkboig86oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

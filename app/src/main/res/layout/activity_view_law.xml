@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewLaw">
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text"
+        android:textColor="@color/brown"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Laws Details"
+        android:background="@drawable/custom_button"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp" />
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:background="@drawable/custom_button"
+        android:id="@+id/search"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:outlineSpotShadowColor="@color/brown"
+        android:layout_margin="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/brown"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_control_point_black_24dp"
+        android:tint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="5dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</androidx.constraintlayout.widget.ConstraintLayout>
